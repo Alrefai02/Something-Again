@@ -14,6 +14,6 @@ public class DestroyEnemy : MonoBehaviour
 
     private void Update()
     {
-        transform.position =  Vector2.MoveTowards(transform.position,player.transform.position, distance);
+        transform.position =  Vector2.MoveTowards(transform.position,player.transform.position, distance * Time.deltaTime);
     }
 }
